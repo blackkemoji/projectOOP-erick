@@ -137,13 +137,22 @@ int main() {
     int choice;
     Library library;
 
+    // Adding predefined books
+    Book book1("Inheritance", "Inheritance", "Paul Kariuki");
+    Book book2("Chozi La Heri", "Drama", "Jane Omondi");
+    Book book3("River and the Source", "Fiction", "Margret A. Ogolla");
+    Book book4("Kigogo", "Political", "Pauline Kea");
+
+    library.addBook(book1);
+    library.addBook(book2);
+    library.addBook(book3);
+    library.addBook(book4);
+
     while (true) {
         cout << "Input the choice you want" << endl;
         cout << "1: add a book" << endl;
         cout << "2: show all books" << endl;
         cout << "3: add a user" << endl;
-        cout << "4: show users" << endl;
-        cout << "5: search book by name, genre, or author" << endl;
         cout << "4: show users" << endl;
         cout << "5: search book by name, genre, or author" << endl;
         cout << "6: search user by name, admno, or lib no" << endl;
